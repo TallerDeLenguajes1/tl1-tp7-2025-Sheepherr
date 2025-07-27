@@ -20,6 +20,7 @@ empleados[1] = new Empleado()
     Nombre = "Carlos",
     Apellido = "Juarez",
     FechN = new DateTime(1985, 9, 30),
+    FechIng = new DateTime(2004, 4,17),
     CargoEmpleado = Cargo.Administrativo
 };
 empleados[1].CalcularSueldo(320000m);
@@ -39,6 +40,8 @@ foreach (Empleado emp in empleados)
 {
     Console.WriteLine($"Nombre: {emp.Nombre} {emp.Apellido}");
     Console.WriteLine($"Edad: {emp.Edad}");
+    Console.WriteLine($"Fecha de nacimiento: {emp.FechN}");
+    Console.WriteLine($"Fecha de ingreso: {emp.FechIng}");
     Console.WriteLine($"Antigüedad: {emp.Antiguedad}");
     Console.WriteLine($"Años para jubilarse: {emp.Jubil}");
     Console.WriteLine($"Cargo: {emp.CargoEmpleado}");
